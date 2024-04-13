@@ -27,8 +27,8 @@ int countArr(const char array[]);
 void concatStr(char result[50], const char str1[], const char str2[]);
 bool equalStr(const char str1[], const char str2[]);
 
-const char str1[] = {'a', 'l', 'p', 'h', 'a', 'd', 'e', 'l', 't', 'a', '\0'};
-const char str2[] = {'b', 'r', 'a', 'v', 'o', 'c', 'h', 'a', 'r', 'l', 'i', 'e', '\0'};
+const char str1[] = "alphadelta";
+const char str2[] = "bravocharlie";
 char result[50];
 bool equal = false;
 
