@@ -73,10 +73,15 @@ void concatStr(char result[50], const char str1[], const char str2[]) {
 bool equalStr(const char str1[], const char str2[]) {
     int i;
 
-    for (i = 0; str2[i] != '\0'; i++) {
-        if (str2[i] != str1[i])
-            return false;
-        else
-            return true;
+    if (countArr(str1) > countArr(str2) || countArr(str2) > countArr(str1))
+        return false;
+    else {
+        for (i = 0; i <= countArr(str1); i++) {
+            if (str1[i] != str2[i])
+                return false;
+        }
     }
+
+    // If a false is not found in the above loop, this part of the function will run and return true
+    return true;
 }
